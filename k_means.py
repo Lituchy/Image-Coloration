@@ -71,15 +71,3 @@ def k_means_colorization(image_path, num_colors, color_1=None, color_2=None):
     new_image.show()
 
     return new_image
-
-
-if __name__ == '__main__':
-
-    # Default rose with 5 colors
-    #k_means_colorization('rose.jpg', 5)
-    # Rose with 10 colors, interpolated between red and blue
-    #k_means_colorization('rose.jpg', 10, color_1=np.array([255, 0, 0]), color_2=np.array([0, 0, 255]))
-    # Default simple with 4 colors, interpolated between orange and white
-    k_means_colorization('simple.jpg', 40, color_2=np.array([255, 153, 0]))
-    # Default simple with 20 colors
-    #k_means_colorization('simple.jpg', 20)
