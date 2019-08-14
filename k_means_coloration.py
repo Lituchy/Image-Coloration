@@ -25,8 +25,12 @@ def k_means_colorization(image_path, num_colors, color_1=None, color_2=None):
     # Assign two colors if they weren't given as an input
     if color_1 is None:
         color_1 = np.array([255, 255, 255])
+    else:
+        color_1 = np.array(color_1)
     if color_2 is None:
         color_2 = np.array([0, 0, 0])
+    else:
+        color_2 = np.array(color_2)
 
     # Turn image into a numpy array to manipulate
     image = np.asarray(image)
