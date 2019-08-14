@@ -3,10 +3,10 @@ from PIL import Image
 from sklearn.cluster import KMeans
 
 
-# [k_means_colorization] takes in an image path [image_path], a number of colors [num_colors], and two optional
+# [k_means_coloration] takes in an image path [image_path], a number of colors [num_colors], and two optional
 # arguments [color_1] and [color_2]. It sorts the rgb data of the image using the k-means clustering algorithm, and
 # recolors the image using interpolations between [color_1] and [color_2] before displaying the image.
-def k_means_colorization(image_path, num_colors, color_1=None, color_2=None):
+def k_means_coloration(image_path, num_colors, color_1=None, color_2=None):
 
     # Try to get the image; if it doesn't exist, return
     try:
